@@ -1,0 +1,100 @@
+/* General styles */
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+div {
+    color: brown;
+}
+
+p {
+    color: black;
+}
+
+.name {
+    color: black;
+}
+
+.block0 {
+    background-color: white;
+}
+
+.block1 {
+    background-color: white;
+    text-align: center;
+}
+
+.urls {
+    background-color: white;
+    border-color: white;
+    border-spacing: 3px;
+}
+
+.Contact {
+    background-color: wheat;
+}
+
+.table1 {
+    border-spacing: 45px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#white1 {
+    background-image: url(Red2.png);
+}
+
+#division1 {
+    background-color: red;
+}
+
+#Expertise {
+    background-color: rgba(168, 168, 168, 0.89);
+}
+
+#Title {
+    background-image: url(Red.png);
+}
+
+.flex-cointainers {
+    display: flex;
+    justify-content: center;
+}
+
+.dark {
+    background-color: black; 
+    color: white; 
+}
+
+/* Using media to style on mobile and desktop*/
+/* Desktop styles */
+@media screen and (min-width: 768px) {
+    .table1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .block0, .block1 {
+        width: 48%;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 767px) {
+    .table1 {
+        padding: 10px;
+    }
+    .block0, .block1 {
+        width: 100%;
+    }
+}
+
+

@@ -1,7 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="color.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+</head>
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <header style="background-color: #333; color: #fff; text-align: center; padding: 20px;">
+        <h1>Welcome to My Personal Website</h1>
+        <!--Extra Point-->
+        <button id="themeToggle">Change color</button>
+
+        <script>
+            document.getElementById("themeToggle").onclick = function(){
+                document.getElementsByTagName("body")[0].classList.toggle("dark");
+            };
+        </script>
+    </header>
+    <table class="urls">
+        <tr>
+            <th width="300"></th>
+            <th id="white1"width="300">
+                <a href="projects.html" target="_blank" shape=""><h3 style="color: white;">Projects</h3></a>
+            </th>
+            <th width="300"></th>
+            <th id="white1" width="300">
+                <a href="hobbys.html" target="_blank"><h3 style="color: white;">hobbies</h3></a>
+            </th>
+            <th width="300"></th>
+            <th id="white1" width="300">
+                <a href="Contact.html" target="_blank"><h3 style="color: white;">Contact</h3></a>
+            </th>
+            <th width="300"></th>
+        </tr>
+
+    </table>
+    <table class="table1">
+        <tr>
+            <th class="block0" width="500">
+                    <h1 class="name">Ricardo Manjarrez</h1>
+                    <img src="foto ovalada.png" width="300" height="350">
+                    <br>
+                    <br>
+                    <table id="Expertise" width="100%">
+                        <tr>
+                            <p style="text-align: center;"> <h3>Expertise:</h3></p>
+                            <th style="text-align: justify;">
+                                <li>
+                                    Deep learning 
+                                </li>
+                                <li>
+                                    Finantial engineering
+                                </li>
+                                <li>
+                                    Reinforcement Learning
+                                </li>
+                                <li>
+                                    Convex optimization.
+                                </li>
+                            </th>
+                            <th style="text-align: justify;">
+                                <li>
+                                    Data mining
+                                </li>
+                                <li>
+                                    Time series analysis
+                                </li>
+                                <li>
+                                    Probabilistic models
+                                </li>
+                                <li>
+                                    Stochastics processes
+                                </li>
+                                <li>
+                                    Machine learning
+                                </li>
+                            </th>
+                        </tr>
+                    </table>
+            </th>
+            <th class="block1" style="text-align: justify;"> 
+                I studied <b>Mathematics as my bachelors degree</b> with concentration in stochastics processes and finantial mathematics. Some of my favorite 
+                courses were linear algebra 1, linear algebra 2, modern algebra 3, probability, statistics, stochastics processes, 
+                mathematical models in finance, combinatorics.
+                <p>While my bachelors i have had the opportunity to interact with researchers in the area of machine learning, deep learning, convex optimization
+                     and stochastics processes which lead me to gain more interest for this areas. This is why i am fully interested in these areas. Especially 
+                    in creating new mathematical models and leverage my knowledge in computing to create new solution for problems that haven't solved before.</p>
+                <p>Currently i am studing a <b>master's degree in Computer Science </b>at NMSU with a graduate minor in applied statistics.</p>
+            </th>
+        </tr>
+    </table>
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 20px;">
+        <p>&copy; 2024 Ricardo Manjarrez - All rights reserved.</p>
+    </footer>
+    
 </body>
 </html>
+    

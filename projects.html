@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="color.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('Deep.png'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, p {
+            text-align: center;
+        }
+        .project {
+            margin-bottom: 40px;
+        }
+        .project img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto; 
+            border-radius: 8px;
+        }
+        .project h2 {
+            margin-top: 20px;
+        }
+        .project p {
+            margin-top: 10px;
+        }
+        /* Desktop styles */
+        @media screen and (min-width: 768px) {
+        .container {
+            padding: 40px;
+        }
+        .project {
+            display: flex;
+            align-items: center;
+        }
+        .project img {
+            flex: 0 0 50%;
+            margin-right: 20px;
+        }
+        .project h2,.project p {
+            flex: 0 0 50%;
+        }
+        }
+
+        /* Mobile styles */
+        @media screen and (max-width: 767px) {
+        .container {
+            padding: 20px;
+        }
+        .project {
+            flex-direction: column;
+            align-items: center;
+        }
+        .project img {
+            margin-bottom: 10px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: #333; color: #fff; text-align: center; padding: 20px;">
+        <h1>Projects</h1>
+    </header>
+    <table class="urls">
+        <tr>
+            <th width="300"></th>
+            <th id="white1"width="300">
+                <a href="projects.html" target="_blank" shape=""><h3 style="color: white;">Projects</h3></a>
+            </th>
+            <th width="300"></th>
+            <th id="white1" width="300">
+                <a href="hobbys.html" target="_blank"><h3 style="color: white;">hobbies</h3></a>
+            </th>
+            <th width="300"></th>
+            <th id="white1" width="300">
+                <a href="Contact.html" target="_blank"><h3 style="color: white;">Contact</h3></a>
+            </th>
+            <th width="300"></th>
+        </tr>
+    </table>
+    <div class="container">
+        <h1 style="color: black;">My Projects</h1>
+        
+        <div class="project">
+            <h2>Math Thesis: Study of Stochastic Differential Equations in Finance</h2>
+            <p>During my bachelor's degree, I collaborated with my advisor, Dr. Boris, on a study of stochastic differential equations in finance. This thesis explored mathematical models for financial processes and their implications.</p>
+        </div>
+        
+        <div class="project">
+            <h2>Academia Research: Support Vector Machines</h2>
+            <p>In collaboration with Dr. Tapia and Dr. Francisco, I contributed to a paper on Support Vector Machines. My work involved providing proofs and mathematical arguments to support the research findings. This paper was published in a reputed journal.</p>
+        </div>
+        
+        <div class="project">
+            <h2>Academia Research: Reinforcement Learning</h2>
+            <p>Currently, I am working on a project on Reinforcement Learning at NMSU. This research aims to develop new algorithms and techniques in Reinforcement Learning, with applications in various domains such as robotics, gaming, and optimization.</p>
+        </div>
+        
+    </div>
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 20px;">
+        <p>&copy; 2024 Ricardo Manjarrez - All rights reserved.</p>
+    </footer>
+</body>
+</html>

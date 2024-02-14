@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, p {
+            text-align: center;
+        }
+        .hobby {
+            margin-bottom: 40px;
+        }
+        .hobby img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .hobby p {
+            margin-top: 10px;
+        }
+        /* Desktop styles */
+    @media screen and (min-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+    .hobby {
+        display: flex;
+        align-items: center;
+    }
+    .hobby img {
+        flex: 0 0 50%;
+        margin-right: 20px;
+    }
+    .hobby p {
+        flex: 0 0 50%;
+        margin-top: 0;
+    }
+    }
+
+    /* Mobile styles */
+    @media screen and (max-width: 767px) {
+    .container {
+        padding: 20px;
+    }
+    .hobby {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hobby img {
+        margin-bottom: 10px;
+    }
+    }
+    </style>
+</head>
+<body>
+    <header style="background-color: #333; color: #fff; text-align: center; padding: 20px;">
+        <h1>Hobbies</h1>
+    </header>
+    <table class="urls">
+        <tr>
+            <th width="300"></th>
+            <th id="white1"width="300">
+                <a href="projects.html" target="_blank" shape=""><h3 style="color: black;">Projects</h3></a>
+            </th>
+            <th width="300"></th>
+            <th id="white1" width="300">
+                <a href="hobbys.html" target="_blank"><h3 style="color: black;">hobbies</h3></a>
+            </th>
+            <th width="300"></th>
+            <th id="white1" width="300">
+                <a href="Contact.html" target="_blank"><h3 style="color: black;">Contact</h3></a>
+            </th>
+            <th width="300"></th>
+        </tr>
+    </table>
+    <div class="container">
+        <h1>My Hobbies</h1>
+        <div class="hobby">
+            <img src="Hiking.jpg" alt="Hiking">
+            <p>I love hiking in nature, exploring new trails, and enjoying the beauty of the great outdoors.</p>
+        </div>
+        <div class="hobby">
+            <img src="chess.jpg" alt="Playing Chess">
+            <p>Playing chess is not just a game for me, it's a way to challenge my mind and improve my strategic thinking skills.</p>
+        </div>
+        <div class="hobby">
+            <img src="running.jpg" alt="Running">
+            <p>Running helps me stay active and maintain a healthy lifestyle. I enjoy the freedom and sense of accomplishment it brings.</p>
+        </div>
+        <div class="hobby">
+            <img src="olympiads.jpg" alt="Math Olympiads">
+            <p>Participating in math Olympiads is both a passion and a challenge. I love solving complex problems and pushing my limits in mathematics.</p>
+        </div>
+    </div>
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 20px;">
+        <p>&copy; 2024 Ricardo Manjarrez - All rights reserved.</p>
+    </footer>
+</body>
+</html>
