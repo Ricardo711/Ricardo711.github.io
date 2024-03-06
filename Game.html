@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Trivia</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <div id="main-screen">
+            <h1>Welcome to Machine Learning Trivia</h1>
+            <p>This is trivia game of ML for 2 players. Each player should answer 10 questions and the one with the higher score wins.</p>
+            <p>For the next game i will implement an improvement of this trivia, using Node.js. In that game, if a player finish playing and the other 
+                player hadn't finished yet, the game will not finished until both player has finished playing the game to have the score. Also, i will implement
+                a time controler for avoid extremly large games.
+            </p>
+            <p></p>
+            <br>
+            <br>
+            <p>Enter Player 1 Name: <input type="text" id="player1-name"></p>
+            <p>Enter Player 2 Name: <input type="text" id="player2-name"></p>
+            <p>Press the button below to start the game!</p>
+            <button id="start-button">Start Game</button>
+        </div>
+        <div id="game-screen" style="display: none;">
+            <h1>Machine Learning Trivia</h1>
+            <p id="question"></p>
+            <div id="answer-buttons"></div>
+            <p id="player-turn"></p>
+            <p><span id="player1-name-display"></span>'s Score: <span id="player1-score">0</span></p>
+            <p><span id="player2-name-display"></span>'s Score: <span id="player2-score">0</span></p>
+            <button id="next-button" style="display: none;">Next Player</button>
+        </div>
+        <div id="game-over-screen" style="display: none;">
+            <h1>Game Over</h1>
+            <p id="winner-message"></p>
+            <button id="restart-button">Restart</button>
+        </div>
+    </div>
+    <script src="First.js"></script>
+</body>
+</html>
